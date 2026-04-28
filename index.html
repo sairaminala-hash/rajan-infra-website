@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAJAN INFRA | Modern Infrastructure & Construction</title>
+    <meta name="description" content="Rajan Infra specializes in the development and construction of modern infrastructure projects, from residential communities to public spaces.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cinematic Preloader -->
+    <div id="preloader">
+        <img loading="lazy" src="logo.png" alt="Rajan Infra - Premium Architectural & Construction Firm in Hyderabad Logo" title="Rajan Infra - Premium Construction & Interiors in Hyderabad" class="preloader-logo">
+    </div>
+    
+    <!-- Cursor Follower -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Cinematic Shutter Transition -->
+    <div id="cinematic-shutter" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: #0a1128; z-index: 999999; pointer-events: none; transform: scaleY(0); transform-origin: top; transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1);"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                <img src="logo.png" alt="Rajan Infra - Premium Architectural & Construction Firm in Hyderabad Logo" title="Rajan Infra - Premium Construction & Interiors in Hyderabad" class="nav-logo">
+            </a>
+            <ul class="nav-links" style="position: absolute; left: 50%; transform: translateX(-50%); margin: 0; display: flex; gap: 3rem;">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            <div class="nav-actions hide-on-mobile" style="display: flex; justify-content: flex-end; gap: 0.8rem; align-items: center; margin-left: auto;">
+                <a href="https://wa.me/918977893693?text=Hi%20Rajan%20Infra!%20I%20am%20interested%20in%20your%20premium%20services%20for%20my%20project%20in%20[Area%20Name].%20Can%20we%20discuss%20a%20quote?" target="_blank" class="btn btn-whatsapp hover-target" style="padding: 0.6rem 1.2rem; font-size: 0.75rem; white-space: nowrap;">💬 WhatsApp</a>
+                <a href="#" onclick="document.getElementById('contactModal').classList.add('active'); document.body.style.overflow = 'hidden'; event.preventDefault();" class="btn btn-primary hover-target" style="padding: 0.6rem 1.2rem; font-size: 0.75rem; white-space: nowrap;">Contact Us</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="https://wa.me/918977893693?text=Hi%20Rajan%20Infra!%20I%20am%20interested%20in%20your%20premium%20services%20for%20my%20project%20in%20[Area%20Name].%20Can%20we%20discuss%20a%20quote?" target="_blank" style="color: #25D366;">💬 WhatsApp</a></li>
+            <li><a href="#" onclick="document.getElementById('contactModal').classList.add('active'); document.body.style.overflow = 'hidden'; document.querySelector('.mobile-menu').classList.remove('active'); document.querySelector('.hamburger').classList.remove('active'); event.preventDefault();">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section (Futuristic / High-Tech) -->
+    <header id="home" class="hero" style="overflow: hidden; align-items: center; min-height: 100vh; position: relative;">
+        <div class="video-background" style="background-color: #f0f7ff;">
+            <!-- 4K HDR Architectural Masterpiece: Rajan Infra Tower -->
+            <img src="hero_masterpiece.png" alt="High-Fidelity Architectural Masterpiece by Rajan Infra" class="hero-bg-video" style="width: 100%; height: 100%; object-fit: cover; opacity: 1; filter: contrast(1.1) brightness(1.05); image-rendering: -webkit-optimize-contrast;">
+            
+            <div class="hero-overlay" style="background: linear-gradient(0deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 100%);"></div>
+            
+            <!-- Cinematic Light Leaks (Warmer for Daylight) -->
+            <div class="light-leak leak-1" style="background: radial-gradient(ellipse at center, rgba(229, 184, 11, 0.15) 0%, transparent 70%);"></div>
+            <div class="light-leak leak-2" style="background: radial-gradient(ellipse at center, rgba(135, 206, 235, 0.1) 0%, transparent 70%);"></div>
+        </div>
+        
+        <div class="container relative z-10" style="display: flex; align-items: flex-start; justify-content: flex-start; width: 100%; height: 100%; padding-top: 12vh;">
+            <!-- Left Side: Futuristic Typography -->
+            <div class="reveal-left" style="flex: 1; max-width: 700px; padding-left: 1rem;">
+                <p class="hero-subtitle" style="color: #000; letter-spacing: 6px; font-weight: 700; margin-bottom: 1.2rem; display: flex; align-items: center; gap: 15px; font-size: 0.9rem;">
+                    <span style="display: inline-block; width: 40px; height: 2px; background: #000;"></span>
+                    BEYOND CONSTRUCTION
+                </p>
+                <h1 class="hero-title" style="color: #000; font-size: clamp(3.5rem, 6vw, 7rem); line-height: 0.9; margin-bottom: 2rem; font-weight: 900; text-transform: uppercase; text-shadow: none;">
+                    Future<br/>
+                    <span class="text-outline shimmer-text" style="-webkit-text-stroke: 1.5px #000;">Ready.</span>
+                </h1>
+                
+                <div class="hero-actions" style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="#services" class="btn btn-primary btn-lg hover-target" style="padding: 1rem 2rem; font-size: 0.9rem; background: var(--accent-gold); color: #000; border: none; font-weight: 700;">EXPLORE SERVICES</a>
+                    <a href="https://wa.me/918977893693?text=Hi%20Rajan%20Infra!%20I%20am%20interested%20in%20your%20premium%20services%20for%20my%20project%20in%20[Area%20Name].%20Can%20we%20discuss%20a%20quote?" target="_blank" class="hover-target" style="color: #000; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; display: flex; align-items: center; gap: 10px;">
+                        <span style="display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.3); transition: all 0.3s ease;">💬</span>
+                        Let's Talk
+                    </a>
+                </div>
+            </div>   </div>
+
+            <!-- Right Top Sky: Bouncy Brand Logo (Max Visibility Position) -->
+            <div class="reveal-right hide-on-mobile" style="position: absolute; top: 1%; right: 0.5%; width: 420px; z-index: 20;">
+                <div class="logo-hero-container bounce-soft" style="filter: drop-shadow(0 15px 40px rgba(0,0,0,0.25));">
+                    <img src="logo.png" alt="Rajan Infra Logo" style="width: 100%; height: auto;">
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator" style="bottom: 1.5rem;">
+            <span style="color: rgba(255,255,255,0.5);">Scroll to Explore</span>
+            <div class="mouse" style="border-color: rgba(255,255,255,0.5);">
+                <div class="wheel" style="background: var(--accent-gold);"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section ("Why Rajan") -->
+    <section id="about" class="about section-dark" style="position: relative; overflow: hidden;">
+        <!-- 3D Parallax Floating Elements -->
+        <div class="parallax floating-shape shape-glass" data-speed="0.2" style="width: 250px; height: 400px; top: -50px; right: 2%; transform: rotate(15deg);"></div>
+        <div class="parallax floating-shape shape-wireframe" data-speed="-0.15" data-direction="rotate" style="width: 180px; height: 180px; top: 35%; left: -2%;"></div>
+        
+        <div class="container relative z-10">
+            <div class="about-grid">
+                <div class="about-text reveal-left">
+                    <h4 class="section-label" style="color: var(--accent-copper);">Who We Are</h4>
+                    <h2 class="section-title">The Rajan Infra <br/><span class="text-gold" style="color: var(--accent-copper) !important;">Team</span></h2>
+                    <p class="lead-text">At Rajan Infra, we pride ourselves on having a dedicated team of experienced professionals in the fields of infrastructure and construction.</p>
+                    <p>Our talented architects, engineers, and project managers work collaboratively to engineer the future of Hyderabad. From the high-tech corridors of <strong style="color: var(--accent-gold);">Financial District</strong>, <strong style="color: var(--accent-gold);">Kokapet</strong>, and <strong style="color: var(--accent-gold);">Neopolis</strong> to the luxury landscapes of <strong style="color: var(--accent-gold);">Jubilee Hills</strong> and <strong style="color: var(--accent-gold);">Tellapur</strong>, our blueprint is written across the city's most exclusive zip codes.</p>
+                </div>
+                <div class="about-visuals reveal-right">
+                    <div class="image-stack">
+                        <img loading="lazy" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="High-End Architectural Structure showcasing Rajan Infra's Construction Expertise in Hyderabad" title="Premium Architectural Construction by Rajan Infra" class="img-back hover-target ken-burns">
+                        <img loading="lazy" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Interior Design with Flawless Gypsum Plastering by Rajan Infra" title="Luxury Interior Design by Rajan Infra" class="img-front hover-target ken-burns">
+                    </div>
+                </div>
+            </div>
+
+            <!-- WHY RAJAN Features Grid -->
+            <div class="why-rajan-header reveal-up" style="margin-top: 8rem; text-align: center;">
+                <h4 class="section-label" style="color: var(--accent-copper);">The Difference</h4>
+                <h2 class="section-title">WHY <span style="color: var(--accent-copper);">RAJAN?</span></h2>
+                <p class="lead-text" style="max-width: 800px; margin: 0 auto;">At RAJAN, we don't just provide a coating; we provide peace of mind. Our advanced formula combines architectural beauty with industrial-strength protection, ensuring your structures look pristine and remain resilient for decades.</p>
+            </div>
+
+            <div class="features-grid reveal-up" style="margin-top: 4rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Feature 1 -->
+                <div class="feature-card" style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;">
+                    <h3 style="color: var(--accent-copper); margin-bottom: 1.5rem; font-size: 1.3rem;">Unmatched Aesthetics & Finish</h3>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 0.75rem;"><span style="color: var(--accent-copper); font-weight: bold;">✓</span> <span><strong>Premium Bright White Finish:</strong> Achieve a crisp, modern aesthetic that brightens spaces.</span></li>
+                        <li style="display: flex; align-items: start; gap: 0.75rem;"><span style="color: var(--accent-copper); font-weight: bold;">✓</span> <span><strong>Superior Surface Texture:</strong> Engineered for a smooth, high-end feel.</span></li>
+                    </ul>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card" style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;">
+                    <h3 style="color: var(--accent-copper); margin-bottom: 1.5rem; font-size: 1.3rem;">Built to Last a Lifetime</h3>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 0.75rem;"><span style="color: var(--accent-copper); font-weight: bold;">✓</span> <span><strong>Lifetime Warranty:</strong> Our "Guaranteed for Life" promise ensures long-term performance.</span></li>
+                        <li style="display: flex; align-items: start; gap: 0.75rem;"><span style="color: var(--accent-copper); font-weight: bold;">✓</span> <span><strong>Structural Integrity:</strong> Reinforces walls while preventing structural stress.</span></li>
+                    </ul>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card" style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;">
+                    <h3 style="color: var(--accent-copper); margin-bottom: 1.5rem; font-size: 1.3rem;">High-Performance Protection</h3>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 0.75rem;"><span style="color: var(--accent-copper); font-weight: bold;">✓</span> <span><strong>UV & Thermal Shield:</strong> Reflective properties repel harsh UV rays and reduce heat.</span></li>
+                        <li style="display: flex; align-items: start; gap: 0.75rem;"><span style="color: var(--accent-copper); font-weight: bold;">✓</span> <span><strong>Fire & Rust Resistant:</strong> Fire-retardant and completely rust-proof.</span></li>
+                    </ul>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-card" style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;">
+                    <h3 style="color: var(--accent-copper); margin-bottom: 1.5rem; font-size: 1.3rem;">Moisture & Health Defense</h3>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 0.75rem;"><span style="color: var(--accent-copper); font-weight: bold;">✓</span> <span><strong>Moisture-Proof Barrier:</strong> Seals out dampness and water ingress.</span></li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 0.75rem;"><span style="color: var(--accent-copper); font-weight: bold;">✓</span> <span><strong>Eco-Friendly:</strong> 100% non-toxic and low-VOC.</span></li>
+                        <li style="display: flex; align-items: start; gap: 0.75rem;"><span style="color: var(--accent-copper); font-weight: bold;">✓</span> <span><strong>Anti-Fungal:</strong> Prevents mold for a safe, hygienic environment.</span></li>
+                    </ul>
+                </div>
+                <!-- Feature 5 -->
+                <div class="feature-card" style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;">
+                    <h3 style="color: var(--accent-copper); margin-bottom: 1.5rem; font-size: 1.3rem;">Efficiency That Saves Money</h3>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 0.75rem;"><span style="color: var(--accent-copper); font-weight: bold;">✓</span> <span><strong>Reduced Paint Consumption:</strong> Superior primer-like quality means less top-coat paint.</span></li>
+                        <li style="display: flex; align-items: start; gap: 0.75rem;"><span style="color: var(--accent-copper); font-weight: bold;">✓</span> <span><strong>Maintenance-Free:</strong> Zero upkeep, saving labor and repair costs.</span></li>
+                    </ul>
+                </div>
+                <!-- Feature 6 -->
+                <div class="feature-card" style="background: rgba(255,255,255,0.05); padding: 2.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;">
+                    <h3 style="color: var(--accent-copper); margin-bottom: 1.5rem; font-size: 1.3rem;">Hassle-Free Application</h3>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 0.75rem;"><span style="color: var(--accent-copper); font-weight: bold;">✓</span> <span><strong>Ready-to-Use:</strong> No complex mixing or additives required.</span></li>
+                        <li style="display: flex; align-items: start; gap: 0.75rem;"><span style="color: var(--accent-copper); font-weight: bold;">✓</span> <span><strong>Multi-Surface Versatility:</strong> Bonds instantly to concrete, brick, or masonry.</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="reveal-up" style="margin-top: 4rem; text-align: center;">
+                <p style="font-size: 1.15rem; color: rgba(255,255,255,0.95); max-width: 800px; margin: 0 auto; padding: 2rem; background: rgba(0,0,0,0.25); border-radius: 12px; border-left: 4px solid var(--accent-copper);">
+                    <em>Choosing us means choosing a cooler, safer, and more beautiful environment. We bridge the gap between luxury aesthetics and industrial durability.</em>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-black" style="position: relative; overflow: hidden;">
+        <!-- 3D Parallax Floating Elements -->
+        <div class="parallax floating-shape shape-wireframe" data-speed="0.1" data-direction="rotate" style="width: 400px; height: 400px; top: 5%; right: -10%;"></div>
+        <div class="parallax floating-shape shape-glass" data-speed="-0.2" style="width: 200px; height: 200px; bottom: 15%; left: 3%; transform: rotate(-25deg);"></div>
+        
+        <!-- Continuous Panoramic Blueprint Mural -->
+        <div class="parallax evolution-panorama-bg" data-speed="0.05" style="position: absolute; inset: 0; width: 100%; height: 100%; background: url('evolution_panorama.png') repeat-x; background-size: auto 80%; background-position: center center; opacity: 0.15; pointer-events: none; z-index: 1;"></div>
+        
+        <div class="container relative z-10">
+            <div class="section-header reveal-up">
+                <h4 class="section-label">Expertise</h4>
+                <h2 class="section-title" style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+                    Our <span class="text-gradient">Services</span>
+                    <svg class="gear-anim" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-copper);">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                </h2>
+            </div>
+            
+            <div class="services-list">
+                <!-- Service 1 -->
+                <div class="service-row reveal-up" onclick="openServiceModal(1)" style="cursor: pointer;">
+                    <div class="service-content hover-target">
+                        <h3>01. House & Commercial Building Constructions</h3>
+                        <p>From concept to completion, we deliver exceptional construction solutions for residential and commercial spaces with meticulous attention to detail.</p>
+                        <span style="color: var(--accent-gold); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-top: 1rem; display: inline-block;">Explore Details &rarr;</span>
+                    </div>
+                    <div class="service-image hover-target">
+                        <img loading="lazy" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Commercial Building Construction and Design by Rajan Infra Hyderabad" title="Modern Commercial Architecture by Rajan Infra" class="ken-burns">
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-row reveal-up" onclick="openServiceModal(2)" style="cursor: pointer;">
+                    <div class="service-content hover-target">
+                        <h3>02. Gypsum Plastering</h3>
+                        <p>Premium gypsum plastering services ensuring smooth, durable, and aesthetically superior wall finishes for modern interiors.</p>
+                        <span style="color: var(--accent-gold); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-top: 1rem; display: inline-block;">Explore Details &rarr;</span>
+                    </div>
+                    <div class="service-image hover-target">
+                        <img loading="lazy" src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Premium Smooth Gypsum Plastering Wall Finish for Luxury Homes by Rajan Infra" title="Premium Gypsum Plastering Services" class="ken-burns">
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-row reveal-up" onclick="openServiceModal(3)" style="cursor: pointer;">
+                    <div class="service-content hover-target">
+                        <h3>03. Interior Works</h3>
+                        <p>Transforming spaces through innovative interior design and flawless execution, creating environments that inspire and delight.</p>
+                        <span style="color: var(--accent-gold); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-top: 1rem; display: inline-block;">Explore Details &rarr;</span>
+                    </div>
+                    <div class="service-image hover-target">
+                        <img loading="lazy" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Elegant Luxury Interior Design and Styling by Rajan Infra" title="Luxury Interior Design Services" class="ken-burns">
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-row reveal-up" onclick="openServiceModal(4)" style="cursor: pointer;">
+                    <div class="service-content hover-target">
+                        <h3>04. CCTV & Networking Solutions</h3>
+                        <p>Advanced security systems and robust networking infrastructure designed to protect and connect your business operations.</p>
+                        <span style="color: var(--accent-gold); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-top: 1rem; display: inline-block;">Explore Details &rarr;</span>
+                    </div>
+                    <div class="service-image hover-target">
+                        <img loading="lazy" src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="State-of-the-art Networking and Smart Security System Integrations by Rajan Infra" title="Smart Home Networking & Security Solutions" class="ken-burns">
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-row reveal-up border-bottom-0" onclick="openServiceModal(5)" style="cursor: pointer;">
+                    <div class="service-content hover-target">
+                        <h3>05. UPVC Windows & Glass Works</h3>
+                        <p>High-quality UPVC windows and custom glass works offering excellent insulation, security, and aesthetic appeal to your property.</p>
+                        <span style="color: var(--accent-gold); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-top: 1rem; display: inline-block;">Explore Details &rarr;</span>
+                    </div>
+                    <div class="service-image hover-target">
+                        <img loading="lazy" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="High-Quality UPVC Window Installations for Energy Efficiency by Rajan Infra" title="Premium UPVC Windows & Installations" class="ken-burns">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Cost Estimator -->
+    <section id="estimator" class="section-dark" style="position: relative; border-top: 1px solid rgba(255,255,255,0.05); padding-bottom: 2rem;">
+        <div class="container text-center reveal-up">
+            <h4 class="section-label" style="color: var(--accent-copper);">Instant Quote</h4>
+            <h2 class="section-title">Project <span class="text-gold">Estimator</span></h2>
+            <p class="lead-text mb-5" style="max-width: 600px; margin-left: auto; margin-right: auto;">Get a high-level estimate for your next project in Jubilee Hills, Financial District, or anywhere in Hyderabad.</p>
+            
+            <div class="estimator-box">
+                <div style="text-align: left;">
+                    <label style="color: rgba(255,255,255,0.7); margin-bottom: 0.5rem; display: block;">Project Type</label>
+                    <select id="est-type" class="estimator-select" onchange="calculateEstimate()">
+                        <option value="4500">Premium Residential (â‚¹4,500/sqft)</option>
+                        <option value="6000">Ultra-Luxury Villa (â‚¹6,000/sqft)</option>
+                        <option value="3500">Commercial Space (â‚¹3,500/sqft)</option>
+                    </select>
+
+                    <label style="color: rgba(255,255,255,0.7); display: flex; justify-content: space-between;">
+                        <span>Area / Size</span>
+                        <span id="est-size-label" style="color: var(--accent-gold); font-weight: bold;">3000 sq ft</span>
+                    </label>
+                    <input type="range" id="est-size" class="estimator-slider" min="1000" max="15000" step="500" value="3000" oninput="calculateEstimate()">
+                </div>
+                
+                <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                    <p style="color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">Estimated Starting Cost</p>
+                    <div id="est-total" class="estimator-result">₹ 1.35 Cr</div>
+                    <a href="https://wa.me/918977893693?text=Hi%20Rajan%20Infra%2C%20I%27m%20interested%20in%20a%20more%20detailed%20quote%20based%20on%20the%20website%20estimator." target="_blank" class="btn btn-primary hover-target" style="margin-top: 1rem;">Discuss Your Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            let currentEstimateValue = 13500000;
+            
+            function calculateEstimate() {
+                const typeRate = document.getElementById('est-type').value;
+                const size = document.getElementById('est-size').value;
+                document.getElementById('est-size-label').innerText = size + ' sq ft';
+                
+                const targetTotal = typeRate * size;
+                animateValue(currentEstimateValue, targetTotal, 800);
+                currentEstimateValue = targetTotal;
+            }
+            
+            function animateValue(start, end, duration) {
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    const easeProgress = 1 - Math.pow(1 - progress, 4); // easeOutQuart
+                    const current = Math.floor(easeProgress * (end - start) + start);
+                    
+                    let formatted = "";
+                    if (current >= 10000000) {
+                        formatted = "₹ " + (current / 10000000).toFixed(2) + " Cr";
+                    } else {
+                        formatted = "₹ " + (current / 100000).toFixed(2) + " Lakhs";
+                    }
+                    
+                    document.getElementById('est-total').innerText = formatted;
+                    
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    }
+                };
+                window.requestAnimationFrame(step);
+            }
+        </script>
+    </section>
+
+    <!-- Parallax CTA Section -->
+    <section class="cta-parallax">
+        <div class="cta-overlay"></div>
+        <!-- Custom Hyderabad Blueprint Masterplan Mural (Static) -->
+        <div class="hyderabad-mural-bg" style="position: absolute; inset: 0; width: 100%; height: 100%; background: url('hyderabad_blueprint_v2.png') no-repeat center; background-size: cover; opacity: 0.07; pointer-events: none; z-index: 1;"></div>
+        <div class="container text-center relative z-10 reveal-up">
+            <h2 class="text-white text-4xl font-serif mb-6">Ready to bring your vision to life?</h2>
+            <a href="https://wa.me/918977893693?text=Hi%20Rajan%20Infra!%20I%20am%20interested%20in%20your%20premium%20services%20for%20my%20project%20in%20[Area%20Name].%20Can%20we%20discuss%20a%20quote?" target="_blank" class="btn btn-whatsapp btn-lg hover-target" style="display: inline-flex; align-items: center; gap: 0.5rem; justify-content: center;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                Let's Talk
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer & Contact Section -->
+    <footer id="contact" class="footer section-dark">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Info -->
+                <div class="footer-brand reveal-up">
+                    <a href="#home" class="logo-link mb-4 d-block">
+                        <img src="logo.png" alt="Rajan Infra - Premium Architectural & Construction Firm in Hyderabad Logo" title="Rajan Infra - Premium Construction & Interiors in Hyderabad" class="nav-logo">
+                    </a>
+                    <p class="mb-6 text-muted">Specializing in the development and construction of modern infrastructure projects with unmatched integrity and collaboration.</p>
+                    <a href="https://www.instagram.com/the_rajanprojects/" target="_blank" class="social-link hover-target">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        <span>Follow on Instagram</span>
+                    </a>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="footer-contact reveal-up" style="transition-delay: 150ms;">
+                    <h4 class="footer-title">Get in Touch</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="icon">📍</span>
+                            <p>Capital Pk Rd, Ayyappa Society, VIP Hills, Silicon Valley, Madhapur, Hyderabad, Telangana 500081</p>
+                        </li>
+                        <li>
+                            <span class="icon">📞</span>
+                            <p>
+                                <a href="tel:+919502240249" class="hover-target">+91 9502240249</a><br/>
+                                <a href="tel:+918977893693" class="hover-target">+91 8977893693</a>
+                            </p>
+                        </li>
+                        <li>
+                            <span class="icon">✉️</span>
+                            <p>
+                                <a href="mailto:infraprojectsrajan@gmail.com" class="hover-target">infraprojectsrajan@gmail.com</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/918977893693?text=I%20would%20like%20to%20request%20an%20instant%20video%20call" target="_blank" class="btn btn-outline hover-target" style="margin-top: 1.5rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; border-color: rgba(255,255,255,0.2);">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                        Instant Video Call
+                    </a>
+                </div>
+
+                <!-- Trust Grid / Service Areas -->
+                <div class="footer-newsletter reveal-up" style="transition-delay: 300ms;">
+                    <h4 class="footer-title">Our Focus Areas</h4>
+                    <p class="mb-4 text-muted">Building the future of Hyderabad's most exclusive zip codes.</p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+                        <div style="background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); text-align: center;">
+                            <span style="color: var(--accent-gold); font-size: 1.2rem; display: block; margin-bottom: 0.5rem;">🏢</span>
+                            <span style="font-size: 0.9rem; font-weight: 600;">Financial District</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); text-align: center;">
+                            <span style="color: var(--accent-gold); font-size: 1.2rem; display: block; margin-bottom: 0.5rem;">🏡</span>
+                            <span style="font-size: 0.9rem; font-weight: 600;">Jubilee Hills</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); text-align: center;">
+                            <span style="color: var(--accent-gold); font-size: 1.2rem; display: block; margin-bottom: 0.5rem;">🏙️</span>
+                            <span style="font-size: 0.9rem; font-weight: 600;">Kokapet</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); text-align: center;">
+                            <span style="color: var(--accent-gold); font-size: 1.2rem; display: block; margin-bottom: 0.5rem;">🏗️</span>
+                            <span style="font-size: 0.9rem; font-weight: 600;">Tellapur</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom text-center text-muted">
+                <p>&copy; 2026 RAJAN INFRA. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Floating Quote Popup -->
+    <div class="floating-popup" id="quotePopup">
+        <button class="close-popup hover-target" onclick="document.getElementById('quotePopup').style.display='none'" aria-label="Close">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <div class="popup-content">
+            <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem; color: var(--text-primary); font-family: var(--font-serif);">Get a Quote in No Time!</h4>
+            <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Connect with us instantly.</p>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <a href="https://wa.me/918977893693?text=Hi%20Rajan%20Infra!%20I%20am%20interested%20in%20your%20premium%20services%20for%20my%20project%20in%20[Area%20Name].%20Can%20we%20discuss%20a%20quote?" target="_blank" class="btn btn-whatsapp hover-target" style="padding: 0.5rem 1rem; width: 100%; display: flex; justify-content: center; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                    WhatsApp
+                </a>
+                <a href="https://www.instagram.com/the_rajanprojects/" target="_blank" class="btn btn-outline hover-target" style="padding: 0.5rem 1rem; width: 100%; display: flex; justify-content: center; align-items: center; gap: 0.5rem; font-size: 0.9rem; border: 1px solid var(--text-primary); color: var(--text-primary);">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full Screen Contact Modal -->
+    <div id="contactModal" class="contact-modal" onclick="document.getElementById('contactModal').classList.remove('active'); document.body.style.overflow = 'auto';">
+        <button class="contact-modal-close hover-target" onclick="document.getElementById('contactModal').classList.remove('active'); document.body.style.overflow = 'auto';">×</button>
+        <div class="contact-modal-content" onclick="event.stopPropagation()">
+            <h2 class="contact-modal-header">Get in Touch</h2>
+            <div class="contact-modal-grid">
+                
+                <!-- Left: Form -->
+                <div>
+                    <p style="margin-bottom: 2rem; color: rgba(255,255,255,0.8); font-size: 1.1rem;">For inquiries, please leave us your details.</p>
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!'); document.getElementById('contactModal').classList.remove('active'); document.body.style.overflow = 'auto';">
+                        <div class="form-group">
+                            <label>First Name *</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name *</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <div style="position: relative;">
+                                <span style="position: absolute; left: 0; top: 10px; color: rgba(255,255,255,0.7); font-size: 0.9rem;">🌍</span>
+                                <input type="tel" style="padding-left: 25px;">
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Message</label>
+                            <textarea></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit hover-target">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Right: Info -->
+                <div class="contact-info-grid">
+                    <div class="info-block">
+                        <h4>Call Us</h4>
+                        <p>+91 9502240249<br>+91 8977893693</p>
+                    </div>
+                    <div class="info-block">
+                        <h4>Email Us</h4>
+                        <p>infraprojectsrajan@<br>gmail.com</p>
+                    </div>
+                    <div class="info-block">
+                        <h4>Our Location</h4>
+                        <p>Capital Pk Rd, Ayyappa Society,<br>VIP Hills, Silicon Valley,<br>Madhapur, Hyderabad,<br>Telangana 500081</p>
+                    </div>
+                    <div class="info-block">
+                        <h4>Follow Us</h4>
+                        <a href="https://www.instagram.com/the_rajanprojects/" target="_blank" style="text-decoration: underline;">Instagram</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Dynamic Service Details Modal -->
+    <div id="serviceModal" class="contact-modal" style="z-index: 10000;" onclick="closeServiceModal()">
+        <button class="contact-modal-close hover-target" onclick="closeServiceModal()">×</button>
+        <div class="contact-modal-content" style="max-width: 1000px;" onclick="event.stopPropagation()">
+            <h2 id="sm-title" class="contact-modal-header" style="margin-bottom: 2rem; font-size: clamp(2rem, 4vw, 3rem);">Service Name</h2>
+            <div class="contact-modal-grid" style="gap: 4rem;">
+                <!-- Left: Visuals -->
+                <div>
+                    <img id="sm-img" src="" alt="Rajan Infra Premium Service" title="Rajan Infra Service Details" style="width: 100%; height: 400px; border-radius: 20px; object-fit: cover; box-shadow: 0 20px 40px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
+                </div>
+                <!-- Right: Details -->
+                <div style="display: flex; flex-direction: column; justify-content: center;">
+                    <p id="sm-desc" style="color: rgba(255,255,255,0.8); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;"></p>
+                    <h4 style="color: var(--accent-gold); margin-bottom: 1rem; font-size: 1.2rem; font-weight: 600;">Key Features</h4>
+                    <ul id="sm-features" style="list-style-type: none; padding: 0;">
+                        <!-- dynamically populated list items -->
+                    </ul>
+                    <div style="margin-top: 3rem;">
+                        <a href="#" id="sm-quote-btn" target="_blank" class="btn btn-primary hover-target">Request a Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const serviceData = {
+            1: {
+                title: "House & Commercial Constructions",
+                img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+                desc: "From concept to completion, we deliver exceptional construction solutions for residential and commercial spaces. Our engineering approach ensures structural integrity, while our architectural team focuses on maximizing aesthetics and usability.",
+                features: ["Turnkey Project Management", "Structural Engineering & BIM", "Premium Material Sourcing", "Vastu Compliant Floor Plans"]
+            },
+            2: {
+                title: "Gypsum Plastering",
+                img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+                desc: "Premium gypsum plastering services ensuring smooth, durable, and aesthetically superior wall finishes for modern interiors. It eliminates the need for water curing, saving massive amounts of time and resources.",
+                features: ["100% Crack-free finish", "Excellent acoustic & thermal insulation", "High Fire Resistance Rating", "Eco-friendly and sustainable"]
+            },
+            3: {
+                title: "Interior Works",
+                img: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+                desc: "Transforming spaces through innovative interior design and flawless execution. We create custom woodwork, smart lighting environments, and luxury living spaces tailored exactly to your brand or personal taste.",
+                features: ["Bespoke Modular Kitchens", "Luxury Wardrobes & Storage", "Atmospheric Lighting Design", "Premium Flooring Solutions"]
+            },
+            4: {
+                title: "CCTV & Networking Solutions",
+                img: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+                desc: "Advanced security systems and robust networking infrastructure designed to protect and connect your business operations. We build 'Smart Buildings' from the ground up.",
+                features: ["4K IP Camera Installations", "Biometric Access Control", "Enterprise Wi-Fi & LAN Setup", "Smart Home Automation"]
+            },
+            5: {
+                title: "UPVC Windows & Glass Works",
+                img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+                desc: "High-quality UPVC windows and custom glass facades offering excellent thermal insulation, enhanced security, and a beautiful modern aesthetic appeal to your property.",
+                features: ["Soundproof UPVC Profiles", "Toughened Structural Glass", "Weather-resistant sealing", "Custom architectural facades"]
+            }
+        };
+
+        function openServiceModal(id) {
+            const data = serviceData[id];
+            if(!data) return;
+            
+            document.getElementById('sm-title').innerText = data.title;
+            document.getElementById('sm-img').src = data.img;
+            document.getElementById('sm-desc').innerText = data.desc;
+            
+            const featuresList = document.getElementById('sm-features');
+            featuresList.innerHTML = '';
+            data.features.forEach(f => {
+                featuresList.innerHTML += `<li style="margin-bottom: 0.5rem; display: flex; align-items: start; gap: 10px;"><span style="color: var(--accent-copper);">✓</span> ${f}</li>`;
+            });
+            
+            const whatsappText = encodeURIComponent(`Hi Rajan Infra, I'm interested in getting more details/quote for: ${data.title}`);
+            document.getElementById('sm-quote-btn').href = `https://wa.me/918977893693?text=${whatsappText}`;
+            
+            document.getElementById('serviceModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeServiceModal() {
+            document.getElementById('serviceModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+
