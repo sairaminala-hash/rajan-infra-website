@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="7J05T2cns2XdRS8Ir9SX2WRuRRSJxUEQRI6KJuAn50E" />
+    <title>Blog | Rajan Infra | Construction Tips, Costs & Guides for Hyderabad</title>
+    <meta name="description" content="Expert construction tips, cost guides & home building advice from Rajan Infra Hyderabad. Learn about house construction costs, renovation tips, painting guides, best materials & more.">
+    <meta name="keywords" content="house construction cost Hyderabad, construction tips India, home renovation guide, painting tips, cement types, best building materials, low cost house design, how to build a house in Hyderabad, construction blog India">
+    <link rel="canonical" href="https://www.rajaninfra.com/blog.html">
+    <link rel="icon" type="image/png" href="logo.png">
+    
+    <!-- GEO Tags -->
+    <meta name="geo.region" content="IN-TG">
+    <meta name="geo.placename" content="Hyderabad, Telangana, India">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Construction Blog | Rajan Infra | Expert Tips & Cost Guides">
+    <meta property="og:description" content="Expert house construction tips, renovation guides & cost breakdowns for Hyderabad homeowners.">
+    <meta property="og:url" content="https://www.rajaninfra.com/blog.html">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --accent-navy: #0a1128;
+            --accent-gold: #d4af37;
+            --accent-copper: #b08d57;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-sans: 'Montserrat', 'Segoe UI', sans-serif;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-sans);
+            background: #f8f7f4;
+            color: #1a1a2e;
+            line-height: 1.7;
+        }
+        
+        /* Blog Navbar */
+        .blog-nav {
+            background: var(--accent-navy);
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .blog-nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .blog-nav .logo-text {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .blog-nav .logo-text span {
+            color: var(--accent-gold);
+        }
+        
+        .blog-nav .back-link {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+            padding: 0.5rem 1.2rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        
+        .blog-nav .back-link:hover {
+            background: var(--accent-gold);
+            color: var(--accent-navy);
+            border-color: var(--accent-gold);
+        }
+        
+        /* Hero */
+        .blog-hero {
+            background: linear-gradient(135deg, var(--accent-navy) 0%, #1a2744 100%);
+            padding: 5rem 2rem 4rem;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .blog-hero h1 {
+            font-family: var(--font-serif);
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            margin-bottom: 1rem;
+        }
+        
+        .blog-hero h1 span { color: var(--accent-gold); }
+        
+        .blog-hero p {
+            color: rgba(255,255,255,0.7);
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.05rem;
+        }
+        
+        /* Blog Grid */
+        .blog-container {
+            max-width: 1100px;
+            margin: -2rem auto 4rem;
+            padding: 0 2rem;
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        
+        /* Blog Card */
+        .blog-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        }
+        
+        .blog-card-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        
+        .blog-card-body {
+            padding: 1.8rem;
+        }
+        
+        .blog-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: var(--accent-gold);
+            background: rgba(212,175,55,0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-bottom: 0.8rem;
+        }
+        
+        .blog-card-body h2 {
+            font-family: var(--font-serif);
+            font-size: 1.35rem;
+            margin-bottom: 0.8rem;
+            color: var(--accent-navy);
+            line-height: 1.3;
+        }
+        
+        .blog-card-body .excerpt {
+            color: #666;
+            font-size: 0.92rem;
+            margin-bottom: 1.2rem;
+            line-height: 1.6;
+        }
+        
+        .read-more {
+            color: var(--accent-gold);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: gap 0.3s ease;
+        }
+        
+        .read-more:hover { gap: 0.8rem; }
+        
+        /* Article Section (inline expandable) */
+        .article-full {
+            display: none;
+            padding: 0 1.8rem 1.8rem;
+            border-top: 1px solid #f0f0f0;
+            margin-top: 1rem;
+        }
+        
+        .article-full.active { display: block; }
+        
+        .article-full h3 {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            margin: 1.5rem 0 0.6rem;
+            color: var(--accent-navy);
+        }
+        
+        .article-full p {
+            color: #444;
+            font-size: 0.92rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .article-full ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .article-full ul li {
+            color: #444;
+            font-size: 0.92rem;
+            margin-bottom: 0.4rem;
+        }
+        
+        .article-full .highlight-box {
+            background: linear-gradient(135deg, rgba(212,175,55,0.08), rgba(10,17,40,0.04));
+            border-left: 4px solid var(--accent-gold);
+            padding: 1.2rem 1.5rem;
+            border-radius: 0 10px 10px 0;
+            margin: 1.2rem 0;
+        }
+        
+        .article-full .highlight-box p {
+            margin: 0;
+            font-weight: 500;
+            color: var(--accent-navy);
+        }
+        
+        /* CTA Section */
+        .blog-cta {
+            background: var(--accent-navy);
+            padding: 4rem 2rem;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .blog-cta h2 {
+            font-family: var(--font-serif);
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            margin-bottom: 1rem;
+        }
+        
+        .blog-cta h2 span { color: var(--accent-gold); }
+        
+        .blog-cta p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 2rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .blog-cta .cta-btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--accent-gold);
+            color: var(--accent-navy);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .blog-cta .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(212,175,55,0.3);
+        }
+        
+        /* Footer */
+        .blog-footer {
+            background: #0d1527;
+            padding: 2rem;
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.85rem;
+        }
+        
+        .blog-footer a {
+            color: var(--accent-gold);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            .blog-hero { padding: 3rem 1.5rem 2.5rem; }
+            .blog-container { padding: 0 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="blog-nav">
+        <a href="index.html" class="logo-text">RAJAN <span>INFRA</span></a>
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="blog-hero">
+        <h1>Construction <span>Blog</span></h1>
+        <p>Expert tips, cost guides & home building advice from Hyderabad's trusted construction team.</p>
+    </section>
+
+    <!-- Blog Grid -->
+    <div class="blog-container">
+        <div class="blog-grid">
+
+            <!-- Article 1: House Construction Cost -->
+            <article class="blog-card" id="article-1">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="House Construction in Hyderabad" class="blog-card-image" loading="lazy">
+                <div class="blog-card-body">
+                    <span class="blog-tag">Cost Guide</span>
+                    <h2>House Construction Cost in Hyderabad 2026 – Complete Breakdown</h2>
+                    <p class="excerpt">Thinking of building your dream home in Hyderabad? Here's a detailed cost breakdown from foundation to finishing, covering budget, modern, and luxury options.</p>
+                    <a href="#" class="read-more" onclick="toggleArticle('article-1-full', this); return false;">Read Full Guide →</a>
+                </div>
+                <div class="article-full" id="article-1-full">
+                    <h3>How Much Does It Cost to Build a House in Hyderabad?</h3>
+                    <p>Building a house in Hyderabad in 2026 can range from <strong>₹3 Lakhs for small renovations</strong> to <strong>₹50+ Lakhs for luxury villas</strong>. The biggest factors are land area, number of floors, materials used, and finishing quality.</p>
+                    
+                    <h3>Cost Breakdown by Category</h3>
+                    <ul>
+                        <li><strong>Budget Construction:</strong> ₹1,200 – ₹1,800 per sq ft. Basic materials, standard fittings. Ideal for 2BHK independent houses. Total for 1000 sqft: ₹12-18 Lakhs</li>
+                        <li><strong>Modern Construction:</strong> ₹2,500 – ₹3,500 per sq ft. Good quality cement (Ultratech/ACC), branded tiles, modular kitchen. Total for 1000 sqft: ₹25-35 Lakhs</li>
+                        <li><strong>Luxury Construction:</strong> ₹4,500 – ₹6,000+ per sq ft. Italian marble, premium wood, smart home wiring, designer interiors. Total for 1000 sqft: ₹45-60+ Lakhs</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <p>💡 Rajan Infra offers projects starting from just ₹3 Lakhs. We provide free site visits and detailed quotations with no hidden costs. Call +91 8977893693</p>
+                    </div>
+                    
+                    <h3>Key Cost Factors</h3>
+                    <ul>
+                        <li><strong>Foundation:</strong> 10-15% of total cost. Depends on soil type (black cotton soil in Hyderabad needs deeper foundations)</li>
+                        <li><strong>Structure (RCC):</strong> 25-30%. Cement, steel, sand, aggregate</li>
+                        <li><strong>Brickwork & Plastering:</strong> 10-12%. Red bricks vs AAC blocks</li>
+                        <li><strong>Electrical & Plumbing:</strong> 8-10%. Concealed wiring, CPVC pipes</li>
+                        <li><strong>Flooring:</strong> 8-10%. Vitrified tiles (₹40/sqft) to Italian marble (₹300+/sqft)</li>
+                        <li><strong>Painting:</strong> 5-7%. Asian Paints, Berger, or Nerolac</li>
+                        <li><strong>Doors & Windows:</strong> 5-8%. UPVC windows, teak wood doors</li>
+                        <li><strong>Interiors:</strong> 10-15%. Kitchen, wardrobes, false ceiling</li>
+                    </ul>
+                    
+                    <h3>Best Areas to Build in Hyderabad</h3>
+                    <p>Popular areas include Madhapur, Gachibowli, Kompally, Bachupally, Narsingi, Shamshabad, and Financial District. Land costs vary from ₹3,000/sq yard in outskirts to ₹50,000+ in prime locations.</p>
+                    
+                    <h3>Tips to Save Money</h3>
+                    <ul>
+                        <li>Buy cement and steel in bulk during off-season (June-August)</li>
+                        <li>Choose AAC blocks over red bricks — faster construction, better insulation</li>
+                        <li>Use gypsum plastering instead of sand plastering — smoother finish, less paint needed</li>
+                        <li>Go for UPVC windows — no maintenance, no painting, lasts 25+ years</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Article 2: Renovation Guide -->
+            <article class="blog-card" id="article-2">
+                <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&q=80" alt="Home Renovation Hyderabad" class="blog-card-image" loading="lazy">
+                <div class="blog-card-body">
+                    <span class="blog-tag">Renovation</span>
+                    <h2>Complete Home Renovation Guide – When to Renovate vs Reconstruct</h2>
+                    <p class="excerpt">Is your old house showing cracks? Bathroom leaking? Kitchen outdated? Here's how to decide between renovation and full reconstruction, plus costs involved.</p>
+                    <a href="#" class="read-more" onclick="toggleArticle('article-2-full', this); return false;">Read Full Guide →</a>
+                </div>
+                <div class="article-full" id="article-2-full">
+                    <h3>When Should You Renovate?</h3>
+                    <ul>
+                        <li>House is less than 20 years old with good structural health</li>
+                        <li>You want to update kitchen, bathrooms, or flooring only</li>
+                        <li>The foundation and columns are in solid condition</li>
+                        <li>Budget is between ₹3-10 Lakhs</li>
+                    </ul>
+                    
+                    <h3>When Should You Reconstruct?</h3>
+                    <ul>
+                        <li>House is 25+ years old with major cracks in walls/columns</li>
+                        <li>Water seepage in foundation or walls</li>
+                        <li>You want to add extra floors</li>
+                        <li>Old electrical wiring and plumbing is unsafe</li>
+                    </ul>
+                    
+                    <h3>Renovation Costs in Hyderabad (2026)</h3>
+                    <ul>
+                        <li><strong>Painting (Full House):</strong> ₹15-25 per sq ft. A 2BHK costs ₹30,000-60,000</li>
+                        <li><strong>Kitchen Renovation:</strong> ₹1.5-4 Lakhs (modular kitchen with granite top)</li>
+                        <li><strong>Bathroom Renovation:</strong> ₹80,000-2 Lakhs per bathroom</li>
+                        <li><strong>Waterproofing:</strong> ₹30-50 per sq ft for terrace/bathroom</li>
+                        <li><strong>Flooring Replacement:</strong> ₹50-150 per sq ft including labor</li>
+                        <li><strong>False Ceiling:</strong> ₹60-120 per sq ft (gypsum/POP)</li>
+                        <li><strong>Complete Renovation:</strong> ₹800-1,500 per sq ft</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <p>💡 Rajan Infra specializes in both renovation and reconstruction. We assess your existing structure for FREE and recommend the most cost-effective solution. WhatsApp us at +91 8977893693</p>
+                    </div>
+                    
+                    <h3>Pro Tips for Renovation</h3>
+                    <ul>
+                        <li>Always waterproof before re-tiling bathrooms and terrace</li>
+                        <li>Replace old GI pipes with CPVC/PPR pipes — lasts 50+ years</li>
+                        <li>Use putty + primer before painting for a smooth finish</li>
+                        <li>Choose POP/gypsum false ceiling over wood for termite-free life</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Article 3: Materials Guide -->
+            <article class="blog-card" id="article-3">
+                <img src="https://images.unsplash.com/photo-1541123603104-512919d6a96c?w=600&q=80" alt="Construction Materials" class="blog-card-image" loading="lazy">
+                <div class="blog-card-body">
+                    <span class="blog-tag">Materials</span>
+                    <h2>Best Cement, Paint & Building Materials for Construction in 2026</h2>
+                    <p class="excerpt">Confused about which cement to use? Which paint lasts longest? Here's our expert guide to choosing the right materials for your house construction.</p>
+                    <a href="#" class="read-more" onclick="toggleArticle('article-3-full', this); return false;">Read Full Guide →</a>
+                </div>
+                <div class="article-full" id="article-3-full">
+                    <h3>Best Cement Brands for House Construction</h3>
+                    <ul>
+                        <li><strong>UltraTech Cement:</strong> Most popular in Hyderabad. Great for RCC and general construction. ₹350-400 per bag</li>
+                        <li><strong>ACC Cement:</strong> Strong and reliable, excellent for foundations. ₹340-380 per bag</li>
+                        <li><strong>Ambuja Cement:</strong> Known for durability, good for high-rise. ₹350-390 per bag</li>
+                        <li><strong>Zuari Cement:</strong> Local favorite in Telangana, cost-effective. ₹310-350 per bag</li>
+                        <li><strong>Penna Cement:</strong> AP/Telangana brand, great for budget builds. ₹290-340 per bag</li>
+                    </ul>
+                    
+                    <h3>Best Paints for Indian Weather</h3>
+                    <ul>
+                        <li><strong>Asian Paints Apex Ultima (Exterior):</strong> Best weather resistance, 7-year warranty. ₹300-400/litre</li>
+                        <li><strong>Berger WeatherCoat (Exterior):</strong> Excellent anti-fungal properties. ₹280-350/litre</li>
+                        <li><strong>Asian Paints Royale (Interior):</strong> Premium washable, smooth finish. ₹350-500/litre</li>
+                        <li><strong>Nerolac Excel (Budget):</strong> Good quality at lower cost. ₹200-280/litre</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <p>💡 Rajan Infra uses only branded materials (UltraTech/ACC cement, TMT steel, Asian Paints). We never compromise on material quality even for budget projects. Check our pricing: starting ₹1,200/sqft.</p>
+                    </div>
+                    
+                    <h3>Steel (TMT Bars)</h3>
+                    <ul>
+                        <li><strong>Tata Tiscon:</strong> Premium quality, highest strength. ₹55,000-60,000/ton</li>
+                        <li><strong>SAIL TMT:</strong> Government standard, very reliable. ₹50,000-55,000/ton</li>
+                        <li><strong>Vizag Steel (RINL):</strong> Local AP brand, excellent value. ₹48,000-53,000/ton</li>
+                    </ul>
+                    
+                    <h3>UPVC vs Aluminum vs Wooden Windows</h3>
+                    <ul>
+                        <li><strong>UPVC:</strong> Best value. No painting, no rusting, soundproof. ₹350-500/sqft. Lasts 25+ years</li>
+                        <li><strong>Aluminum:</strong> Lightweight, modern look. ₹250-450/sqft. Lasts 15-20 years</li>
+                        <li><strong>Wooden:</strong> Traditional look, needs maintenance. ₹600-1500/sqft. Termite risk</li>
+                    </ul>
+                    
+                    <h3>Money-Saving Material Tips</h3>
+                    <ul>
+                        <li>Buy TMT steel when rates drop (check mandi rates weekly)</li>
+                        <li>Use M-Sand instead of river sand — cheaper, consistent quality</li>
+                        <li>Choose 43-grade cement for plastering, 53-grade for RCC</li>
+                        <li>For painting, always use putty + primer — saves 20% paint</li>
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="blog-cta">
+        <h2>Ready to <span>Build Your Dream</span>?</h2>
+        <p>Get a free consultation and cost estimate for your project. No hidden charges, transparent pricing.</p>
+        <a href="https://wa.me/918977893693?text=Hi%20Rajan%20Infra!%20I%20read%20your%20blog%20and%20I%27m%20interested%20in%20getting%20a%20quote%20for%20my%20project." target="_blank" class="cta-btn">💬 Get Free Quote on WhatsApp</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="blog-footer">
+        <p>&copy; 2026 Rajan Infra Projects Pvt. Ltd. | <a href="index.html">Home</a> | <a href="https://wa.me/918977893693" target="_blank">WhatsApp</a> | <a href="tel:+918977893693">Call Now</a></p>
+    </footer>
+
+    <script>
+        function toggleArticle(id, btn) {
+            const article = document.getElementById(id);
+            if (article.classList.contains('active')) {
+                article.classList.remove('active');
+                btn.textContent = 'Read Full Guide →';
+            } else {
+                article.classList.add('active');
+                btn.textContent = 'Close Article ✕';
+            }
+        }
+    </script>
+
+</body>
+</html>
