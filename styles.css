@@ -713,13 +713,19 @@ section {
 }
 
 @media (max-width: 768px) {
-    .nav-links { display: none; }
+    .nav-links { display: none !important; }
+    .nav-actions { display: none !important; }
     .hamburger { display: flex; cursor: pointer; }
     
     .cursor-dot, .cursor-outline { display: none; } /* Disable custom cursor on mobile */
     * { cursor: auto; }
     
-    .hero-title { font-size: 3rem; }
+    .hero-title { font-size: 2.8rem !important; }
+    .hero-subtitle { font-size: 0.75rem !important; letter-spacing: 3px !important; }
+    
+    .hero .container { padding-top: 8vh !important; }
+    
+    .hero-actions { flex-direction: column; gap: 1rem !important; align-items: flex-start !important; }
     
     .service-row {
         flex-direction: column;
@@ -738,11 +744,32 @@ section {
         margin-top: 1.5rem;
     }
     
+    .service-content h3 { font-size: 1.4rem; }
+    
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
+    
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+    .form-group.full-width {
+        grid-column: span 1;
+    }
+    .btn-submit {
+        grid-column: span 1;
+    }
+
+    section { padding: 4rem 0; }
+    
+    .features-grid { grid-template-columns: 1fr !important; }
+    
+    .estimator-box { padding: 1.5rem !important; }
+    
+    .cta-parallax { padding: 5rem 0; }
 }
+
 /* Floating Popup */
 .floating-popup {
     position: fixed;
