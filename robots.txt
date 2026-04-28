@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.rajaninfra.com/sitemap.xml
+
+# Block unnecessary files
+Disallow: /*.png$
