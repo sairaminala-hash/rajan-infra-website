@@ -186,7 +186,7 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 10000;
     padding: 2rem 0;
     transition: var(--transition-fast);
 }
@@ -248,13 +248,13 @@ ul {
     display: none;
     flex-direction: column;
     gap: 6px;
-    z-index: 1001;
+    z-index: 10001;
 }
 
 .hamburger .bar {
     width: 30px;
     height: 2px;
-    background: var(--text-primary);
+    background: #fff;
     transition: var(--transition-fast);
 }
 
@@ -274,8 +274,8 @@ ul {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: var(--bg-main);
-    z-index: 999;
+    background: var(--accent-navy);
+    z-index: 9998;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,7 +299,7 @@ ul {
 .mobile-nav-links a {
     font-family: var(--font-serif);
     font-size: 2.5rem;
-    color: var(--text-primary);
+    color: #fff;
 }
 
 .mobile-nav-links a:hover {
@@ -1259,4 +1259,88 @@ section {
 @keyframes leak-drift {
     0% { transform: translateY(0) translateX(0) rotate(-45deg) scale(1); }
     100% { transform: translateY(300px) translateX(-200px) rotate(-35deg) scale(1.5); }
+}
+
+/* Estimator Section */
+.estimator-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.estimator-select {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23d4af37' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+}
+
+.estimator-select:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+}
+
+.estimator-select option {
+    background: #1a1c21;
+    color: #fff;
+}
+
+.estimator-slider {
+    width: 100%;
+    height: 6px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+    outline: none;
+    margin-top: 0.75rem;
+}
+
+.estimator-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--accent-gold);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    transition: transform 0.2s ease;
+}
+
+.estimator-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+.estimator-slider::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--accent-gold);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+.estimator-result {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    font-family: var(--font-serif);
+    color: var(--accent-gold);
+    margin-top: 0.5rem;
 }

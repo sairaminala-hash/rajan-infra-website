@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
     <!-- Main CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -35,7 +37,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#estimator">Projects</a></li>
             </ul>
             <div class="nav-actions hide-on-mobile" style="display: flex; justify-content: flex-end; gap: 0.8rem; align-items: center; margin-left: auto;">
                 <a href="https://wa.me/918977893693?text=Hi%20Rajan%20Infra!%20I%20am%20interested%20in%20your%20premium%20services%20for%20my%20project%20in%20[Area%20Name].%20Can%20we%20discuss%20a%20quote?" target="_blank" class="btn btn-whatsapp hover-target" style="padding: 0.6rem 1.2rem; font-size: 0.75rem; white-space: nowrap;">💬 WhatsApp</a>
@@ -55,7 +57,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#estimator">Projects</a></li>
             <li><a href="https://wa.me/918977893693?text=Hi%20Rajan%20Infra!%20I%20am%20interested%20in%20your%20premium%20services%20for%20my%20project%20in%20[Area%20Name].%20Can%20we%20discuss%20a%20quote?" target="_blank" style="color: #25D366;">💬 WhatsApp</a></li>
             <li><a href="#" onclick="document.getElementById('contactModal').classList.add('active'); document.body.style.overflow = 'hidden'; document.querySelector('.mobile-menu').classList.remove('active'); document.querySelector('.hamburger').classList.remove('active'); event.preventDefault();">Contact</a></li>
         </ul>
@@ -297,9 +299,9 @@
                 <div style="text-align: left;">
                     <label style="color: rgba(255,255,255,0.7); margin-bottom: 0.5rem; display: block;">Project Type</label>
                     <select id="est-type" class="estimator-select" onchange="calculateEstimate()">
-                        <option value="4500">Premium Residential (â‚¹4,500/sqft)</option>
-                        <option value="6000">Ultra-Luxury Villa (â‚¹6,000/sqft)</option>
-                        <option value="3500">Commercial Space (â‚¹3,500/sqft)</option>
+                        <option value="4500">Premium Residential (₹4,500/sqft)</option>
+                        <option value="6000">Ultra-Luxury Villa (₹6,000/sqft)</option>
+                        <option value="3500">Commercial Space (₹3,500/sqft)</option>
                     </select>
 
                     <label style="color: rgba(255,255,255,0.7); display: flex; justify-content: space-between;">
