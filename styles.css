@@ -604,7 +604,7 @@ section {
 }
 
 .footer-brand .nav-logo {
-    filter: brightness(0) invert(1); /* Makes the logo white */
+    /* Logo inherits its natural transparency and color */
 }
 
 .footer-grid {
@@ -926,7 +926,6 @@ section {
 .preloader-logo {
     width: 150px;
     height: auto;
-    filter: brightness(0) invert(1);
     animation: pulseLogo 2s infinite;
 }
 
