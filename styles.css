@@ -604,9 +604,7 @@ section {
 }
 
 .footer-brand .nav-logo {
-    background-color: #ffffff;
-    padding: 6px;
-    border-radius: 8px;
+    filter: brightness(0) invert(1); /* Makes the logo white */
 }
 
 .footer-grid {
@@ -928,9 +926,7 @@ section {
 .preloader-logo {
     width: 150px;
     height: auto;
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 12px;
+    filter: brightness(0) invert(1);
     animation: pulseLogo 2s infinite;
 }
 
