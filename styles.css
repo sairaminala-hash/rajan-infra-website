@@ -697,6 +697,27 @@ section {
 }
 
 /* Responsive Styles */
+/* Form Validation Error Styles */
+.form-error {
+    display: none;
+    color: #ef4444;
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    font-family: var(--font-sans);
+}
+
+.input-error {
+    border-bottom-color: #ef4444 !important;
+    animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-4px); }
+    40%, 80% { transform: translateX(4px); }
+}
+
+/* Tablet Breakpoint (768px - 1024px) — Fix Hero Text Overlap */
 @media (max-width: 1024px) {
     .about-grid {
         grid-template-columns: 1fr;
@@ -709,6 +730,33 @@ section {
     
     .footer-grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    /* Hero: prevent text/logo overlap on tablets */
+    .hero .container {
+        flex-direction: column !important;
+        padding-top: 14vh !important;
+    }
+
+    .hero .reveal-left {
+        max-width: 100% !important;
+    }
+
+    .hero .reveal-right {
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        width: 200px !important;
+        margin-top: 2rem;
+        align-self: flex-start;
+    }
+
+    .hero-title {
+        font-size: clamp(3rem, 5vw, 5rem) !important;
+    }
+
+    .hero-actions {
+        flex-wrap: wrap !important;
     }
 }
 

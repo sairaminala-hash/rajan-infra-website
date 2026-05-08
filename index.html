@@ -28,7 +28,7 @@
     <meta property="og:url" content="https://www.rajaninfra.com/">
     <meta property="og:title" content="Rajan Infra | Affordable Construction & Renovation | Starting ₹3 Lakhs">
     <meta property="og:description" content="House construction starting ₹3 Lakhs! Painting, cement, plastering, renovations, interiors & more. Best quotes in Hyderabad. Free site visit & estimate. Call now!">
-    <meta property="og:image" content="https://www.rajaninfra.com/hero_masterpiece.png">
+    <meta property="og:image" content="https://www.rajaninfra.com/hero_night.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="en_IN">
@@ -38,7 +38,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Rajan Infra | Affordable Construction & Renovation | Starting ₹3 Lakhs">
     <meta name="twitter:description" content="Low cost house construction, painting, renovations & interiors in Hyderabad. Budget ₹3L to Luxury ₹14L+. Best quotes guaranteed! Free site visit.">
-    <meta name="twitter:image" content="https://www.rajaninfra.com/hero_masterpiece.png">
+    <meta name="twitter:image" content="https://www.rajaninfra.com/hero_night.png">
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#0a1128">
@@ -55,7 +55,7 @@
         "alternateName": "Rajan Infra",
         "url": "https://www.rajaninfra.com",
         "logo": "https://www.rajaninfra.com/logo.png",
-        "image": "https://www.rajaninfra.com/hero_masterpiece.png",
+        "image": "https://www.rajaninfra.com/hero_night.png",
         "description": "Hyderabad's most affordable & trusted construction company. New house construction (₹3L-₹14L+), renovations, reconstructions, painting, cement work, plastering, interiors, UPVC windows & CCTV. Serving all India.",
         "telephone": ["+91-9502240249", "+91-8977893693"],
         "email": "infraprojectsrajan@gmail.com",
@@ -148,20 +148,20 @@
     <div id="cinematic-shutter" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: #0a1128; z-index: 999999; pointer-events: none; transform: scaleY(0); transform-origin: top; transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1);"></div>
 
     <!-- Navigation -->
-    <nav id="navbar" class="navbar">
+    <nav id="navbar" class="navbar" style="background: rgba(10, 17, 40, 0.4); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
         <div class="nav-container">
             <a href="#home" class="logo-link">
-                <img src="logo.png" alt="Rajan Infra - Premium Architectural & Construction Firm in Hyderabad Logo" title="Rajan Infra - Premium Construction & Interiors in Hyderabad" class="nav-logo">
+                <img src="logo.png" alt="Rajan Infra - Premium Architectural & Construction Firm in Hyderabad Logo" title="Rajan Infra - Premium Construction & Interiors in Hyderabad" class="nav-logo" style="filter: brightness(0) invert(1);">
             </a>
             <ul class="nav-links" style="position: absolute; left: 50%; transform: translateX(-50%); margin: 0; display: flex; gap: 3rem;">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#estimator">Projects</a></li>
+                <li><a href="#home" style="color: #fff; font-weight: 500; text-shadow: 0 0 10px rgba(255,255,255,0.1);">Home</a></li>
+                <li><a href="#about" style="color: #fff; font-weight: 500; text-shadow: 0 0 10px rgba(255,255,255,0.1);">About</a></li>
+                <li><a href="#services" style="color: #fff; font-weight: 500; text-shadow: 0 0 10px rgba(255,255,255,0.1);">Services</a></li>
+                <li><a href="#estimator" style="color: #fff; font-weight: 500; text-shadow: 0 0 10px rgba(255,255,255,0.1);">Projects</a></li>
             </ul>
             <div class="nav-actions hide-on-mobile" style="display: flex; justify-content: flex-end; gap: 0.8rem; align-items: center; margin-left: auto;">
-                <a href="https://wa.me/918977893693?text=Hi%20Rajan%20Infra!%20I%20am%20interested%20in%20your%20premium%20services%20for%20my%20project%20in%20[Area%20Name].%20Can%20we%20discuss%20a%20quote?" target="_blank" class="btn btn-whatsapp hover-target" style="padding: 0.6rem 1.2rem; font-size: 0.75rem; white-space: nowrap;">💬 WhatsApp</a>
-                <a href="#" onclick="document.getElementById('contactModal').classList.add('active'); document.body.style.overflow = 'hidden'; event.preventDefault();" class="btn btn-primary hover-target" style="padding: 0.6rem 1.2rem; font-size: 0.75rem; white-space: nowrap;">Contact Us</a>
+                <a href="https://wa.me/918977893693?text=Hi%20Rajan%20Infra!%20I%20am%20interested%20in%20your%20premium%20services%20for%20my%20project%20in%20[Area%20Name].%20Can%20we%20discuss%20a%20quote?" target="_blank" class="btn btn-whatsapp hover-target" style="padding: 0.6rem 1.2rem; font-size: 0.75rem; white-space: nowrap; background: #25D366; border: none; color: #fff; font-weight: 600;">💬 WhatsApp</a>
+                <a id="contact-btn-ref" href="#" onclick="document.getElementById('contactModal').classList.add('active'); document.body.style.overflow = 'hidden'; event.preventDefault();" class="btn btn-primary hover-target" style="padding: 0.6rem 1.2rem; font-size: 0.75rem; white-space: nowrap; background: var(--accent-gold); color: #000; border: none; font-weight: 700;">Contact Us</a>
             </div>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -185,49 +185,49 @@
 
     <!-- Hero Section (Futuristic / High-Tech) -->
     <header id="home" class="hero" style="overflow: hidden; align-items: center; min-height: 100vh; position: relative;">
-        <div class="video-background" style="background-color: #f0f7ff;">
-            <!-- 4K HDR Architectural Masterpiece: Rajan Infra Tower -->
-            <img src="hero_masterpiece.png" alt="High-Fidelity Architectural Masterpiece by Rajan Infra" class="hero-bg-video" style="width: 100%; height: 100%; object-fit: cover; opacity: 1; filter: contrast(1.1) brightness(1.05); image-rendering: -webkit-optimize-contrast;">
+        <div class="video-background" style="background-color: #0a1128;">
+            <!-- Cinematic Nighttime Architectural Masterpiece -->
+            <img src="hero_night.png" alt="Luxury Nighttime Architectural Masterpiece by Rajan Infra - Premium Construction in Hyderabad" class="hero-bg-video" style="width: 100%; height: 100%; object-fit: cover; opacity: 1; filter: contrast(1.12) brightness(1.08) saturate(1.15); image-rendering: high-quality;">
             
-            <div class="hero-overlay" style="background: linear-gradient(0deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 100%);"></div>
+            <div class="hero-overlay" style="background: linear-gradient(0deg, rgba(10,17,40,0.7) 0%, rgba(10,17,40,0.2) 40%, rgba(0,0,0,0) 70%, rgba(10,17,40,0.3) 100%);"></div>
             
-            <!-- Cinematic Light Leaks (Warmer for Daylight) -->
-            <div class="light-leak leak-1" style="background: radial-gradient(ellipse at center, rgba(229, 184, 11, 0.15) 0%, transparent 70%);"></div>
-            <div class="light-leak leak-2" style="background: radial-gradient(ellipse at center, rgba(135, 206, 235, 0.1) 0%, transparent 70%);"></div>
+            <!-- Cinematic Light Leaks (Warm Amber for Night) -->
+            <div class="light-leak leak-1" style="background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.12) 0%, transparent 70%);"></div>
+            <div class="light-leak leak-2" style="background: radial-gradient(ellipse at center, rgba(255, 180, 50, 0.08) 0%, transparent 70%);"></div>
         </div>
         
         <div class="container relative z-10" style="display: flex; align-items: flex-start; justify-content: flex-start; width: 100%; height: 100%; padding-top: 12vh;">
             <!-- Left Side: Futuristic Typography -->
             <div class="reveal-left" style="flex: 1; max-width: 700px; padding-left: 1rem;">
-                <p class="hero-subtitle" style="color: #000; letter-spacing: 6px; font-weight: 700; margin-bottom: 1.2rem; display: flex; align-items: center; gap: 15px; font-size: 0.9rem;">
-                    <span style="display: inline-block; width: 40px; height: 2px; background: #000;"></span>
+                <p class="hero-subtitle" style="color: rgba(255,255,255,0.85); letter-spacing: 6px; font-weight: 700; margin-bottom: 1.2rem; display: flex; align-items: center; gap: 15px; font-size: 0.9rem;">
+                    <span style="display: inline-block; width: 40px; height: 2px; background: var(--accent-gold);"></span>
                     BEYOND CONSTRUCTION
                 </p>
-                <h1 class="hero-title" style="color: #000; font-size: clamp(3.5rem, 6vw, 7rem); line-height: 0.9; margin-bottom: 2rem; font-weight: 900; text-transform: uppercase; text-shadow: none;">
+                <h1 class="hero-title" style="color: #fff; font-size: clamp(3.5rem, 6vw, 7rem); line-height: 0.9; margin-bottom: 2rem; font-weight: 900; text-transform: uppercase; text-shadow: 0 10px 60px rgba(0,0,0,0.8), 0 0 20px rgba(255,255,255,0.1);">
                     Future<br/>
-                    <span class="text-outline shimmer-text" style="-webkit-text-stroke: 1.5px #000;">Ready.</span>
+                    <span class="text-outline shimmer-text" style="-webkit-text-stroke: 1.5px rgba(255,255,255,0.9); text-shadow: none;">Ready.</span>
                 </h1>
                 
                 <div class="hero-actions" style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap; margin-top: 2rem;">
                     <a href="#services" class="btn btn-primary btn-lg hover-target" style="padding: 1rem 2rem; font-size: 0.9rem; background: var(--accent-gold); color: #000; border: none; font-weight: 700;">EXPLORE SERVICES</a>
-                    <a href="https://wa.me/918977893693?text=Hi%20Rajan%20Infra!%20I%20am%20interested%20in%20your%20premium%20services%20for%20my%20project%20in%20[Area%20Name].%20Can%20we%20discuss%20a%20quote?" target="_blank" class="hover-target" style="color: #000; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; display: flex; align-items: center; gap: 10px;">
-                        <span style="display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.3); transition: all 0.3s ease;">💬</span>
+                    <a href="https://wa.me/918977893693?text=Hi%20Rajan%20Infra!%20I%20am%20interested%20in%20your%20premium%20services%20for%20my%20project%20in%20[Area%20Name].%20Can%20we%20discuss%20a%20quote?" target="_blank" class="hover-target" style="color: rgba(255,255,255,0.9); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; display: flex; align-items: center; gap: 10px;">
+                        <span style="display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.3); transition: all 0.3s ease;">💬</span>
                         Let's Talk
                     </a>
                 </div>
             </div>   </div>
 
-            <!-- Right Top Sky: Bouncy Brand Logo (Max Visibility Position) -->
-            <div class="reveal-right hide-on-mobile" style="position: absolute; top: 1%; right: 0.5%; width: 420px; z-index: 20;">
-                <div class="logo-hero-container bounce-soft" style="filter: drop-shadow(0 15px 40px rgba(0,0,0,0.25));">
-                    <img src="logo.png" alt="Rajan Infra Logo" style="width: 100%; height: auto;">
+            <!-- Right Top Sky: Bouncy Brand Logo (Strategically Aligned under Contact Us) -->
+            <div class="reveal-right hide-on-mobile" style="position: absolute; top: 11vh; right: 2%; width: 340px; z-index: 20;">
+                <div class="logo-hero-container bounce-soft" style="filter: drop-shadow(0 20px 50px rgba(0,0,0,0.6));">
+                    <img src="logo.png" alt="Rajan Infra Logo" style="width: 100%; height: auto; filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(255,255,255,0.2)); image-rendering: -webkit-optimize-contrast;">
                 </div>
             </div>
             </div>
         </div>
         
         <div class="scroll-indicator" style="bottom: 1.5rem;">
-            <span style="color: rgba(255,255,255,0.5);">Scroll to Explore</span>
+            <span style="color: rgba(255,255,255,0.7);">Scroll to Explore</span>
             <div class="mouse" style="border-color: rgba(255,255,255,0.5);">
                 <div class="wheel" style="background: var(--accent-gold);"></div>
             </div>
@@ -620,29 +620,39 @@
                 <!-- Left: Form -->
                 <div>
                     <p style="margin-bottom: 2rem; color: rgba(255,255,255,0.8); font-size: 1.1rem;">For inquiries, please leave us your details.</p>
-                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!'); document.getElementById('contactModal').classList.remove('active'); document.body.style.overflow = 'auto';">
+                    <div id="form-success-msg" style="display:none; background: rgba(16,185,129,0.15); border: 1px solid #10b981; border-radius: 12px; padding: 2rem; text-align: center; margin-bottom: 2rem;">
+                        <span style="font-size: 2.5rem; display: block; margin-bottom: 0.75rem;">✅</span>
+                        <h3 style="color: #10b981; margin-bottom: 0.5rem;">Message Sent Successfully!</h3>
+                        <p style="color: rgba(255,255,255,0.8);">We'll get back to you within 24 hours.</p>
+                    </div>
+                    <form id="contactForm" class="contact-form" onsubmit="return handleContactSubmit(event)" novalidate>
                         <div class="form-group">
-                            <label>First Name *</label>
-                            <input type="text" required>
+                            <label for="cf-fname">First Name *</label>
+                            <input type="text" id="cf-fname" name="firstName" required minlength="2" autocomplete="given-name">
+                            <span class="form-error" id="err-fname"></span>
                         </div>
                         <div class="form-group">
-                            <label>Last Name *</label>
-                            <input type="text" required>
+                            <label for="cf-lname">Last Name *</label>
+                            <input type="text" id="cf-lname" name="lastName" required minlength="2" autocomplete="family-name">
+                            <span class="form-error" id="err-lname"></span>
                         </div>
                         <div class="form-group">
-                            <label>Email *</label>
-                            <input type="email" required>
+                            <label for="cf-email">Email *</label>
+                            <input type="email" id="cf-email" name="email" required autocomplete="email">
+                            <span class="form-error" id="err-email"></span>
                         </div>
                         <div class="form-group">
-                            <label>Phone</label>
+                            <label for="cf-phone">Phone</label>
                             <div style="position: relative;">
                                 <span style="position: absolute; left: 0; top: 10px; color: rgba(255,255,255,0.7); font-size: 0.9rem;">🌍</span>
-                                <input type="tel" style="padding-left: 25px;">
+                                <input type="tel" id="cf-phone" name="phone" pattern="[0-9+\-\s]{7,15}" style="padding-left: 25px;" autocomplete="tel">
+                                <span class="form-error" id="err-phone"></span>
                             </div>
                         </div>
                         <div class="form-group full-width">
-                            <label>Message</label>
-                            <textarea></textarea>
+                            <label for="cf-message">Message *</label>
+                            <textarea id="cf-message" name="message" required minlength="10"></textarea>
+                            <span class="form-error" id="err-message"></span>
                         </div>
                         <button type="submit" class="btn-submit hover-target">Submit</button>
                     </form>
@@ -755,6 +765,78 @@
         function closeServiceModal() {
             document.getElementById('serviceModal').classList.remove('active');
             document.body.style.overflow = 'auto';
+        }
+    </script>
+    <script>
+        // Contact Form Validation & Submission Handler
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            let isValid = true;
+
+            // Clear previous errors
+            document.querySelectorAll('.form-error').forEach(el => { el.textContent = ''; el.style.display = 'none'; });
+            document.querySelectorAll('.contact-form input, .contact-form textarea').forEach(el => el.classList.remove('input-error'));
+
+            const fname = document.getElementById('cf-fname');
+            const lname = document.getElementById('cf-lname');
+            const email = document.getElementById('cf-email');
+            const phone = document.getElementById('cf-phone');
+            const message = document.getElementById('cf-message');
+
+            // First Name
+            if (!fname.value.trim() || fname.value.trim().length < 2) {
+                showError('err-fname', 'Please enter a valid first name (min 2 characters)', fname);
+                isValid = false;
+            }
+
+            // Last Name
+            if (!lname.value.trim() || lname.value.trim().length < 2) {
+                showError('err-lname', 'Please enter a valid last name (min 2 characters)', lname);
+                isValid = false;
+            }
+
+            // Email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email.value.trim() || !emailRegex.test(email.value.trim())) {
+                showError('err-email', 'Please enter a valid email address', email);
+                isValid = false;
+            }
+
+            // Phone (optional but validate format if filled)
+            if (phone.value.trim() && !/^[0-9+\-\s]{7,15}$/.test(phone.value.trim())) {
+                showError('err-phone', 'Please enter a valid phone number', phone);
+                isValid = false;
+            }
+
+            // Message
+            if (!message.value.trim() || message.value.trim().length < 10) {
+                showError('err-message', 'Please enter a message (min 10 characters)', message);
+                isValid = false;
+            }
+
+            if (isValid) {
+                // Show success message
+                document.getElementById('contactForm').style.display = 'none';
+                document.getElementById('form-success-msg').style.display = 'block';
+
+                // Reset & close after 3 seconds
+                setTimeout(() => {
+                    document.getElementById('contactForm').reset();
+                    document.getElementById('contactForm').style.display = '';
+                    document.getElementById('form-success-msg').style.display = 'none';
+                    document.getElementById('contactModal').classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }, 3000);
+            }
+
+            return false;
+        }
+
+        function showError(errorId, message, inputEl) {
+            const errSpan = document.getElementById(errorId);
+            errSpan.textContent = message;
+            errSpan.style.display = 'block';
+            if (inputEl) inputEl.classList.add('input-error');
         }
     </script>
     <script src="script.js"></script>
