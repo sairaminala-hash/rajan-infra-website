@@ -101,6 +101,10 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
 }
 
+.text-orange {
+    color: #FF5E0E; /* Total Construction Orange */
+}
+
 .text-white { color: #fff; }
 .text-muted { color: var(--text-muted); }
 .font-serif { font-family: var(--font-serif); }
@@ -456,7 +460,7 @@ section {
 }
 
 .about-text p:not(.lead-text) {
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 1.5rem;
 }
 
